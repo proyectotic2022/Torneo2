@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "5ezxz2LKw1EyVXiL8ZatYzS+78m4Ij5eI6Tiwb2HyVI/QZZHuqZttA0uowWapsZ+PZirm2NR9K+xt7NrWHgbZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Servicios\\Torneo.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
