@@ -5795,19 +5795,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\": {}
+    "C:\\Users\\amsan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj",
+      "projectUniqueName": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj",
       "projectName": "Torneo.App.Consola",
-      "projectPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Consola\\obj\\",
+      "projectPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\amsan\\.nuget\\packages\\",
+      "outputPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\amsan\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5819,8 +5819,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj"
+            "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj": {
+              "projectPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj"
             }
           }
         }

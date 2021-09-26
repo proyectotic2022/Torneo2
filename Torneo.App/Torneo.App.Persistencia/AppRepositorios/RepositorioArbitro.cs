@@ -46,14 +46,13 @@ namespace Torneo.App.Persistencia
         public Arbitro UpdateArbitro(Arbitro arbitro)
         {
             var arbitroEncontrado = _appContext.Arbitros.Find(arbitro.id);
-            //var idcolegio = _appContext.Colegio.Find(colegio.id);
             if (arbitroEncontrado != null)
             {
                 arbitroEncontrado.nombre = arbitro.nombre;
                 arbitroEncontrado.documento = arbitro.documento;
                 arbitroEncontrado.telefono = arbitro.telefono;
                 arbitroEncontrado.colegio = arbitro.colegio;
-                //idcolegio.id = colegio.id;                
+                _appContext.SaveChanges();              
             }
             return arbitroEncontrado;
         }

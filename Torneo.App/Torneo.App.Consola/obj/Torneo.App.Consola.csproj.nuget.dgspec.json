@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj": {}
+    "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj": {
+    "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj",
+        "projectUniqueName": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj",
         "projectName": "Torneo.App.Consola",
-        "projectPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Consola\\obj\\",
+        "projectPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Consola\\Torneo.App.Consola.csproj",
+        "packagesPath": "C:\\Users\\amsan\\.nuget\\packages\\",
+        "outputPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\amsan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj"
+              "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj": {
+                "projectPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj"
               }
             }
           }
@@ -68,17 +68,17 @@
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj": {
+    "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
+        "projectUniqueName": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
         "projectName": "Torneo.App.Dominio",
-        "projectPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Dominio\\obj\\",
+        "projectPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\amsan\\.nuget\\packages\\",
+        "outputPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\amsan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -128,17 +128,17 @@
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj": {
+    "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
+        "projectUniqueName": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
         "projectName": "Torneo.App.Persistencia",
-        "projectPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\obj\\",
+        "projectPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\amsan\\.nuget\\packages\\",
+        "outputPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\amsan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -150,8 +150,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Documents\\Torneo\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj"
+              "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj": {
+                "projectPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj"
               }
             }
           }
