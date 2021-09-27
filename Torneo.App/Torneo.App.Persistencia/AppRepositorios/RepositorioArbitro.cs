@@ -7,11 +7,6 @@ namespace Torneo.App.Persistencia
     {
         private readonly AppContext  _appContext= new AppContext();
 
-        /*public RepositorioArbitro(AppContext appContext)
-        {
-            _appContext = appContext;
-        }*/
-
         //Agregar arbitro
         public Arbitro AddArbitro(Arbitro arbitro)
         {
