@@ -123,7 +123,7 @@ namespace Torneo.App.Consola
                                         BuscarArbitro(codigoArbi);
                                     break;
 
-                                    case 3: 
+                                    case 3: // test
                                         mostrarArbitro();
                                     break;
 
