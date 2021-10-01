@@ -34,3 +34,21 @@ D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Modulo 4\Torneo2\
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Modulo 4\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\ref\Torneo.App.Persistencia.dll
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Modulo 4\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.pdb
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Modulo 4\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.genruntimeconfig.cache
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Persistencia.deps.json
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Persistencia.runtimeconfig.json
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Persistencia.runtimeconfig.dev.json
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Persistencia.dll
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\ref\Torneo.App.Persistencia.dll
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Persistencia.pdb
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Dominio.dll
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Dominio.pdb
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.csproj.AssemblyReference.cache
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.AssemblyInfo.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.csproj.CopyComplete
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.dll
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\ref\Torneo.App.Persistencia.dll
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.pdb
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.genruntimeconfig.cache

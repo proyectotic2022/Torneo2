@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Torneo.App.Dominio;
+using System.Linq;
 
 namespace Torneo.App.Persistencia
 {
@@ -58,6 +59,38 @@ namespace Torneo.App.Persistencia
                 _appContext.SaveChanges();
             }
             return partidoEncontrado;
+        }
+
+        public Arbitro AsignarArbitro(int idpartido, int idarbitro)
+        {
+            var p_encontrado = _appContext.Partidos.FirstOrDefault(p=>p.id==idpartido);
+            if(p_encontrado!=null)
+            {
+             var a_encontrado=_appContext.Arbitros.FirstOrDefault(a=>a.id==idarbitro);
+             if(a_encontrado!=null)
+             {
+                 p_encontrado.arbitros=a_encontrado;
+                 _appContext.SaveChanges();
+             }
+             return a_encontrado;
+
+            }
+            return null;
+        }
+        public Equipo AsignarEquipoA(int id_partido, int id_equipo)
+        {
+            var p_encontrado=_appContext.Partidos.FirstOrDefault(p=>p.id==id_partido);
+            if(p_encontrado!= null)
+            {
+             var e_encontrado=_appContext.Equipos.FirstOrDefault(e=>e.id==id_equipo);
+             if(e_encontrado!=null)
+             {
+               p_encontrado.equipoa=e_encontrado;
+               _appContext.SaveChanges();
+             }
+             return e_encontrado;
+            }
+            return null;
         }
     }
 }

@@ -115,7 +115,7 @@ namespace Torneo.App.Persistencia.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    diretoresTecnicoid = table.Column<int>(type: "int", nullable: true),
+                    directorTecnicoid = table.Column<int>(type: "int", nullable: true),
                     municipioid = table.Column<int>(type: "int", nullable: true),
                     desempenoid = table.Column<int>(type: "int", nullable: true)
                 },
@@ -129,8 +129,8 @@ namespace Torneo.App.Persistencia.Migrations
                         principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Equipos_DirectoresTecnicos_diretoresTecnicoid",
-                        column: x => x.diretoresTecnicoid,
+                        name: "FK_Equipos_DirectoresTecnicos_directorTecnicoid",
+                        column: x => x.directorTecnicoid,
                         principalTable: "DirectoresTecnicos",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
@@ -248,9 +248,9 @@ namespace Torneo.App.Persistencia.Migrations
                 column: "desempenoid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Equipos_diretoresTecnicoid",
+                name: "IX_Equipos_directorTecnicoid",
                 table: "Equipos",
-                column: "diretoresTecnicoid");
+                column: "directorTecnicoid");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Equipos_municipioid",

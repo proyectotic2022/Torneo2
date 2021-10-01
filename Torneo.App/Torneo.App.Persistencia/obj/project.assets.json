@@ -5814,19 +5814,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amsan\\.nuget\\packages\\": {}
+    "C:\\Users\\yudyc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\yudyc\\Documents\\MINTIC\\Ciclo 3\\Desarrollo de software\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
       "projectName": "Torneo.App.Persistencia",
-      "projectPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
-      "packagesPath": "C:\\Users\\amsan\\.nuget\\packages\\",
-      "outputPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\obj\\",
+      "projectPath": "C:\\Users\\yudyc\\Documents\\MINTIC\\Ciclo 3\\Desarrollo de software\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
+      "packagesPath": "C:\\Users\\yudyc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yudyc\\Documents\\MINTIC\\Ciclo 3\\Desarrollo de software\\Torneo2\\Torneo.App\\Torneo.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\amsan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\yudyc\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5838,8 +5838,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj": {
-              "projectPath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Modulo 4\\Torneo2\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj"
+            "C:\\Users\\yudyc\\Documents\\MINTIC\\Ciclo 3\\Desarrollo de software\\Torneo2\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\yudyc\\Documents\\MINTIC\\Ciclo 3\\Desarrollo de software\\Torneo2\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj"
             }
           }
         }

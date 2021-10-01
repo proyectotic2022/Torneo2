@@ -104,7 +104,7 @@ namespace Torneo.App.Persistencia.Migrations
                     b.Property<int?>("desempenoid")
                         .HasColumnType("int");
 
-                    b.Property<int?>("diretoresTecnicoid")
+                    b.Property<int?>("directorTecnicoid")
                         .HasColumnType("int");
 
                     b.Property<int?>("municipioid")
@@ -117,7 +117,7 @@ namespace Torneo.App.Persistencia.Migrations
 
                     b.HasIndex("desempenoid");
 
-                    b.HasIndex("diretoresTecnicoid");
+                    b.HasIndex("directorTecnicoid");
 
                     b.HasIndex("municipioid");
 
@@ -293,9 +293,9 @@ namespace Torneo.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("desempenoid");
 
-                    b.HasOne("Torneo.App.Dominio.DirectorTecnico", "diretoresTecnico")
+                    b.HasOne("Torneo.App.Dominio.DirectorTecnico", "directorTecnico")
                         .WithMany()
-                        .HasForeignKey("diretoresTecnicoid");
+                        .HasForeignKey("directorTecnicoid");
 
                     b.HasOne("Torneo.App.Dominio.Municipio", "municipio")
                         .WithMany("Equipos")
@@ -303,7 +303,7 @@ namespace Torneo.App.Persistencia.Migrations
 
                     b.Navigation("desempeno");
 
-                    b.Navigation("diretoresTecnico");
+                    b.Navigation("directorTecnico");
 
                     b.Navigation("municipio");
                 });
@@ -311,7 +311,7 @@ namespace Torneo.App.Persistencia.Migrations
             modelBuilder.Entity("Torneo.App.Dominio.Jugador", b =>
                 {
                     b.HasOne("Torneo.App.Dominio.Equipo", "equipo")
-                        .WithMany("jugador")
+                        .WithMany()
                         .HasForeignKey("equipoid");
 
                     b.HasOne("Torneo.App.Dominio.Posicion", "posicion")
@@ -361,11 +361,6 @@ namespace Torneo.App.Persistencia.Migrations
                     b.Navigation("equipob");
 
                     b.Navigation("estadio");
-                });
-
-            modelBuilder.Entity("Torneo.App.Dominio.Equipo", b =>
-                {
-                    b.Navigation("jugador");
                 });
 
             modelBuilder.Entity("Torneo.App.Dominio.Municipio", b =>

@@ -4,6 +4,6 @@ namespace Torneo.App.Dominio
     {
         public int id{get;set;}
         public string nombre {get;set;}
-          public List<Equipo> Equipos { get; set; }
+        public List<Equipo> Equipos { get; set; }
     }
 }
