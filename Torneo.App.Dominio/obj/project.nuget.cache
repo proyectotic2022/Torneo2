@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R7IdmbsW7fz1V4bbvT5wTQ32xcXw3UGl0SsQ9UPYNZrMuMCbE467QHSM0mzwWgeGFwIQNonpHOw34EQtWPyk0A==",
+  "dgSpecHash": "LxV98+OChQHc9o29O10GUAQJ4oYkw8VOKTmLx20b8rbqMzuAX6oBN9dRzjTxH/LKt09jUbjZF5Lo3c7lKD7aOA==",
   "success": true,
-  "projectFilePath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Torneo\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
+  "projectFilePath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Torneo\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amsan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\amsan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

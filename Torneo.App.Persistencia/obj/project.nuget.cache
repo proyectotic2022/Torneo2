@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "534Nkf79+VRFvB7+L1W9lVOZ3eHeFW6cuG///Z6JsKYSh/V6IQEFucpaZBIzuxoAfpFIt93IxSTeez8AMK5J+A==",
+  "dgSpecHash": "zwYCO5bJqc+uQtmUvqBS4WQf10j9KcCIPSzRwH/OD0dUnfKOG9Q+noHpER36qFDd+U+XUirjRR/uh0Dt0/Vf4w==",
   "success": true,
-  "projectFilePath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Desarrollo de Software\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
+  "projectFilePath": "D:\\Alejo\\Documentos\\MinTic 2021\\Ciclo 3\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amsan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\amsan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

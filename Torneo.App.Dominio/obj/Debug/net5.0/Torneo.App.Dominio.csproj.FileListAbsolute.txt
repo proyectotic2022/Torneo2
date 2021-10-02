@@ -43,3 +43,18 @@ D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Torneo\Torneo.App
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\ref\Torneo.App.Dominio.dll
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\Torneo.App.Dominio.pdb
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\Torneo.App.Dominio.genruntimeconfig.cache
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\bin\Debug\net5.0\Torneo.App.Dominio.deps.json
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\bin\Debug\net5.0\Torneo.App.Dominio.runtimeconfig.json
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\bin\Debug\net5.0\Torneo.App.Dominio.runtimeconfig.dev.json
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\bin\Debug\net5.0\Torneo.App.Dominio.dll
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\bin\Debug\net5.0\ref\Torneo.App.Dominio.dll
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\bin\Debug\net5.0\Torneo.App.Dominio.pdb
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\Torneo.App.Dominio.csproj.AssemblyReference.cache
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\Torneo.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\Torneo.App.Dominio.AssemblyInfoInputs.cache
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\Torneo.App.Dominio.AssemblyInfo.cs
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\Torneo.App.Dominio.csproj.CoreCompileInputs.cache
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\Torneo.App.Dominio.dll
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\ref\Torneo.App.Dominio.dll
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\Torneo.App.Dominio.pdb
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net5.0\Torneo.App.Dominio.genruntimeconfig.cache

@@ -52,3 +52,21 @@ D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Torneo\Torneo.App
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\ref\Torneo.App.Persistencia.dll
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.pdb
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Desarrollo de Software\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.genruntimeconfig.cache
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Persistencia.deps.json
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Persistencia.runtimeconfig.json
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Persistencia.runtimeconfig.dev.json
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Persistencia.dll
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\ref\Torneo.App.Persistencia.dll
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Persistencia.pdb
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Dominio.dll
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\bin\Debug\net5.0\Torneo.App.Dominio.pdb
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.csproj.AssemblyReference.cache
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.AssemblyInfoInputs.cache
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.AssemblyInfo.cs
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.csproj.CoreCompileInputs.cache
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.csproj.CopyComplete
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.dll
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\ref\Torneo.App.Persistencia.dll
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.pdb
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Persistencia\obj\Debug\net5.0\Torneo.App.Persistencia.genruntimeconfig.cache
