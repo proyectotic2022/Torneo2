@@ -42,17 +42,9 @@ namespace Torneo.App.Persistencia
         public Equipo UpdateEquipo(Equipo equipo)
         {
             var equipoEncontrado = _appContext.Equipos.Find(equipo.id);            
-            //var idMunicipio = _appContext.Municipios.Find(municipio.id);
-            //var idDT = _appContext.DirectoresTecnicos.Find(directortecnico.id);
-            //var idJugador = _appContext.Jugadores.Find(jugador.id);
-            //var idDesempeno = _appContext.Desempenos.Find(desempeno.id);
             if (equipoEncontrado != null)
             {
                 equipoEncontrado.nombre = equipo.nombre;
-                //idDT.id = directortecnico.id;
-                //idJugador.id = jugador.id;
-                //idMunicipio.id = municipio.id;
-                //idDesempeno.id = desempeno.id;
                 _appContext.SaveChanges();
             }
             return equipoEncontrado;
@@ -98,13 +90,13 @@ namespace Torneo.App.Persistencia
             var e_encontrado = _appContext.Equipos.FirstOrDefault(e=>e.id==idEquipo);
             if(e_encontrado!=null)
             {
-             var d_encontrado=_appContext.Desempenos.FirstOrDefault(d=>d.id==idDesempeno);
-             if(d_encontrado!=null)
-             {
-                 e_encontrado.desempeno=d_encontrado;
-                 _appContext.SaveChanges();
-             }
-             return d_encontrado;
+            var d_encontrado=_appContext.Desempenos.FirstOrDefault(d=>d.id==idDesempeno);
+            if(d_encontrado!=null)
+                {
+                    e_encontrado.desempeno=d_encontrado;
+                    _appContext.SaveChanges();
+                }
+            return d_encontrado;
             }
             return null;
         }

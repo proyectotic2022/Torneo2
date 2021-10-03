@@ -595,10 +595,7 @@ namespace Torneo.App.Consola
         private static void ModificarEquipo(Equipo equipo)
         {
             _RepositorioEquipo.UpdateEquipo(equipo);
-            Console.WriteLine(equipo.nombre);
-            //Console.WriteLine(directorTecnico.id);
-            //Console.WriteLine(municipio.id);
-            //Console.WriteLine(desempeno.id);            
+            Console.WriteLine(equipo.nombre);          
         }
 
         ///////////// ASIGNAR //////////////////////
