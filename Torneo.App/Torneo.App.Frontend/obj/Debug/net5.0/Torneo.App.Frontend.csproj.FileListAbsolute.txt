@@ -72,3 +72,4 @@ C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.Ap
 C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\bin\Debug\net5.0\Torneo.App.Persistencia.pdb
 C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\bin\Debug\net5.0\Torneo.App.Dominio.pdb
 C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Details.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\DirectoresTecnicos\Index.cshtml.g.cs

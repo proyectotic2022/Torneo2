@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using Torneo.App.Dominio;
 
@@ -35,6 +36,15 @@ namespace Torneo.App.Persistencia
         //Mostrar un equipo
         public Equipo GetEquipo(int id)
         {
+            var equipo = _appContext.Equipos
+            .Where(e => e.id == id)
+            .Include(e => e.directorTecnico)
+            .FirstOrDefault();
+
+            equipo = _appContext.Equipos
+            .Where(e => e.id == id)
+            .Include(e => e.municipio)
+            .FirstOrDefault();
             return _appContext.Equipos.Find(id);
         }
 
