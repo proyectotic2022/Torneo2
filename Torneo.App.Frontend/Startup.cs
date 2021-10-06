@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Torneo.App.Persistencia;
 
 namespace Torneo.App.Frontend
 {
@@ -24,6 +25,10 @@ namespace Torneo.App.Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSingleton<IRepositorioEquipo, RepositorioEquipo>();
+            services.AddSingleton<IRepositorioDirectorTecnico, RepositorioDirectorTecnico>();
+            services.AddSingleton<IRepositorioJugador, RepositorioJugador>();
+            services.AddSingleton<IRepositorioPosicion, RepositorioPosicion>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

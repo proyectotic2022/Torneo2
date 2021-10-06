@@ -388,6 +388,74 @@ namespace Torneo.App.Consola
                             }//cierre switch equipo                                
                         } while (operacion5 != 0);
                         break;
+                    case 8:
+                        int operacion8;
+                        do
+                        {
+                            Console.WriteLine("Seleccione la opcion que desea de Director Tecnico");
+                            Console.WriteLine("1.  Insertar Director Tecnico");
+                            Console.WriteLine("2.  Buscar Direcro Tecnico");
+                            Console.WriteLine("3.  Mostrar Directores Tecnicos");
+                            Console.WriteLine("4.  Actualizar Director Tecnico");
+                            Console.WriteLine("5.  Eliminar Director Tecnico");
+                            Console.WriteLine("0.  Salir opción Director Tecnico");
+                            Console.WriteLine("Ingrese la operación que desea ejecutar");
+                            operacion8 = int.Parse(Console.ReadLine());
+
+                            switch (operacion8)
+                            {
+                                case 1:
+                                    int telefono_Dt, documento_Dt;
+                                    String nombre_Dt;
+                                    Console.WriteLine("Digite Nombre");
+                                    nombre_Dt = (Console.ReadLine());
+                                    Console.WriteLine("Digite Documento");
+                                    documento_Dt = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Digite Telefono");
+                                    telefono_Dt = int.Parse(Console.ReadLine());
+                                    AdicionarDirectorTecnico(nombre_Dt, documento_Dt, telefono_Dt);
+                                break;
+
+                                case 2:
+                                    int id_dt;
+                                    Console.WriteLine("Digite id de Director Tecnico");
+                                    id_dt = int.Parse(Console.ReadLine());
+                                    BuscarDirectorTecnico(id_dt);
+                                break;
+
+                                case 3:
+                                    mostrarDirectorTecnico();
+
+                                break;
+
+                                case 4:
+                                    int id_DTecnico, telefono_DTecnico, documento_DTecnico;
+                                    String nombre_DTecnico;
+                                    DirectorTecnico directorTecnico = new DirectorTecnico();
+                                    Console.WriteLine("Digite ID a editar");
+                                    id_DTecnico = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Digite nuevo nombre");
+                                    nombre_DTecnico = (Console.ReadLine());
+                                    Console.WriteLine("Digite nuevo documento");
+                                    documento_DTecnico = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Digite nuevo telefono");
+                                    telefono_DTecnico = int.Parse(Console.ReadLine());
+                                    directorTecnico.id = id_DTecnico;
+                                    directorTecnico.nombre = nombre_DTecnico;
+                                    directorTecnico.documento = documento_DTecnico;
+                                    directorTecnico.telefono = telefono_DTecnico;
+                                    ModificarDirectorTecnico(directorTecnico);                                    
+                                break;
+
+                                case 5:
+                                    int id_DirectorTecnico;
+                                    Console.WriteLine("Digite ID a eliminar");
+                                    id_DirectorTecnico = int.Parse(Console.ReadLine());
+                                    EliminarDirectorTecnico(id_DirectorTecnico);
+                                break;
+                            }//cierre switch DirectorTecnico                                
+                        } while (operacion8 != 0);
+                        break;                        
                 }//cierre switch principal 
             } while (opcion != 0);
 
@@ -434,6 +502,14 @@ namespace Torneo.App.Consola
                 Console.WriteLine(equipo.nombre);
             }
         }
+        private static void mostrarDirectorTecnico()
+        {
+            var dTecnicos = _RepositorioDirectorTecnico.GetAllDT();
+            foreach (var dTecnico in dTecnicos)
+            {
+                Console.WriteLine(dTecnico.nombre + " " + dTecnico.documento + " " + dTecnico.telefono);
+            }
+        }        
         //////////// BUSCAR ///////////////////////
         private static void BuscarArbitro(int id)
         {
@@ -460,7 +536,7 @@ namespace Torneo.App.Consola
             var equipo = _RepositorioEquipo.GetEquipo(id);
             Console.WriteLine(equipo.nombre);
         }
-        private static void BuscarDt(int id)
+        private static void BuscarDirectorTecnico(int id)
         {
             var directorTecnico = _RepositorioDirectorTecnico.GetDT(id);
             Console.WriteLine(directorTecnico.nombre + " " + directorTecnico.documento + " " + directorTecnico.telefono);
@@ -522,6 +598,17 @@ namespace Torneo.App.Consola
             };
             _RepositorioPartido.AddPartido(partidosadd);
         }
+        private static void AdicionarDirectorTecnico(String nombre, int documento, int telefono)
+        {
+            var dTecnico = new DirectorTecnico
+            {
+                nombre = nombre,
+                documento = documento,
+                telefono = telefono,
+                
+            };
+            _RepositorioDirectorTecnico.AddDT(dTecnico);
+        }        
         /////////////// ASIGNAR /////////////////////// 
         private static void AsignarArbitro_Partido(int id_partido, int id_arbitro)
         {
@@ -582,7 +669,7 @@ namespace Torneo.App.Consola
         {
             _RepositorioEquipo.DeleteEquipo(id);
         }
-        private static void EliminarDTecnico(int id)
+        private static void EliminarDirectorTecnico(int id)
         {
             _RepositorioDirectorTecnico.DeleteDT(id);
         }
@@ -616,5 +703,12 @@ namespace Torneo.App.Consola
             Console.WriteLine(jugador.nombre);
             Console.WriteLine(jugador.numero);
         }
+        private static void ModificarDirectorTecnico(DirectorTecnico dTecnico)
+        {
+            _RepositorioDirectorTecnico.UpdateDT(dTecnico);
+            Console.WriteLine(dTecnico.nombre);
+            Console.WriteLine(dTecnico.documento);
+            Console.WriteLine(dTecnico.telefono);            
+        }        
     }
 }

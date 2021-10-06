@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Torneo.App.Dominio;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Torneo.App.Persistencia
 {
@@ -36,6 +37,14 @@ namespace Torneo.App.Persistencia
         //Mostrar un jugador
         public Jugador GetJugador(int id)
         {
+            var jugador = _appContext.Jugadores
+            .Where(e => e.id == id)
+            .Include(e => e.equipo)
+            .FirstOrDefault();
+            jugador = _appContext.Jugadores
+            .Where(e => e.id == id)
+            .Include(e => e.posicion)
+            .FirstOrDefault();       
             return _appContext.Jugadores.Find(id);
         }
 

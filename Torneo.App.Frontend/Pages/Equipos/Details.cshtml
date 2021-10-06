@@ -1,0 +1,34 @@
+﻿@page
+@model Torneo.App.Frontend.Pages.Equipos.DetailsModel
+@{
+}
+<h1>Detalle del equipo</h1>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.equipo.nombre</td>
+    </tr>
+    <tr>
+        <th scope="col">Director Tecnico</th>
+        @if (Model.equipo.directorTecnico == null)
+        {
+            <td><a class="btn btn-primary" asp-page="./AddDirectorTecnico" asp-route-id="@Model.equipo.id">Asignar Director Tecnico</a></td>
+        }
+         else
+        {
+            <td>@Model.equipo.directorTecnico.nombre</td>
+        }        
+    </tr>
+    <tr>
+        <th scope="col">Municipio</th>
+        @if (Model.equipo.municipio == null)
+        {
+            <td><a class="btn btn-primary" asp-page="./AddMunicipio" asp-route-id="@Model.equipo.id">Asignar Municipio</a></td>
+        }
+         else
+        {
+            <td>@Model.equipo.municipio.nombre</td>
+        }        
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

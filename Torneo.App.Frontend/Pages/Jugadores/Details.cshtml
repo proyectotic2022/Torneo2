@@ -1,0 +1,38 @@
+﻿@page
+@model Torneo.App.Frontend.Pages.Jugadores.DetailsModel
+@{
+}
+<h1>Detalle del jugador</h1>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.jugador.nombre</td>
+    </tr>
+    <tr>
+        <th scope="col">Numero</th>
+        <td>@Model.jugador.numero</td>
+    </tr>    
+    <tr>
+        <th scope="col">Equipo</th>
+        @if (Model.jugador.equipo == null)
+        {
+            <td><a class="btn btn-primary" asp-page="./AddEquipo" asp-route-id="@Model.jugador.id">Asignar Equipo</a></td>
+        }
+         else
+        {
+            <td>@Model.jugador.equipo.nombre</td>
+        }        
+    </tr>
+    <tr>
+        <th scope="col">Posicion</th>
+        @if (Model.jugador.posicion == null)
+        {
+            <td><a class="btn btn-primary" asp-page="./AddPosicion" asp-route-id="@Model.jugador.id">Asignar Posicion</a></td>
+        }
+         else
+        {
+            <td>@Model.jugador.posicion.nombre</td>
+        }        
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>
