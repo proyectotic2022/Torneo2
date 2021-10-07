@@ -154,3 +154,8 @@ D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\ob
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Posiciones\Details.cshtml.g.cs
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Posiciones\Index.cshtml.g.cs
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Posiciones\Create.cshtml.g.cs
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Posiciones\Edit.cshtml.g.cs
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Create.cshtml.g.cs
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\AddEquipo.cshtml.g.cs
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\AddPosicion.cshtml.g.cs
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Edit.cshtml.g.cs

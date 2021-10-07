@@ -35,17 +35,14 @@ namespace Torneo.App.Persistencia
         }
 
         //Mostrar un jugador
-        public Jugador GetJugador(int id)
+        Jugador IRepositorioJugador.GetJugador(int id)
         {
             var jugador = _appContext.Jugadores
-            .Where(e => e.id == id)
-            .Include(e => e.equipo)
-            .FirstOrDefault();
-            jugador = _appContext.Jugadores
-            .Where(e => e.id == id)
-            .Include(e => e.posicion)
-            .FirstOrDefault();       
-            return _appContext.Jugadores.Find(id);
+                .Where(j => j.id == id)
+                .Include(j => j.equipo)
+                .Include(j => j.posicion)
+                .FirstOrDefault();
+            return jugador;
         }
 
         //Actualizar jugadores
@@ -61,7 +58,7 @@ namespace Torneo.App.Persistencia
             return jugadorEncontrado;
         }
         // Asignar Equipo a Jugador
-        public Equipo AsignarJugador_Equipo(int id_jugador, int id_equipo)
+        Equipo IRepositorioJugador.AsignarJugador_Equipo(int id_jugador, int id_equipo)
         {
             var j_encontrado=_appContext.Jugadores.FirstOrDefault(j=>j.id==id_jugador);
             if(j_encontrado!= null)
@@ -77,7 +74,7 @@ namespace Torneo.App.Persistencia
             return null;
         }
         // Asignar Posicion a Jugador
-        public Posicion AsignarPosicion_Jugador(int id_jugador, int id_posicion)
+        Posicion IRepositorioJugador.AsignarPosicion_Jugador(int id_jugador, int id_posicion)
         {
             var j_encontrado=_appContext.Jugadores.FirstOrDefault(p=>p.id==id_jugador);
             if(j_encontrado!= null)

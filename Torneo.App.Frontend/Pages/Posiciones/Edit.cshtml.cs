@@ -4,16 +4,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Torneo.App.Persistencia;
 using Torneo.App.Dominio;
+using Torneo.App.Persistencia;
 
 namespace Torneo.App.Frontend.Pages.Posiciones
 {
-    public class DetailsModel : PageModel
+    public class EditModel : PageModel
     {
         private readonly IRepositorioPosicion _RepoPosicion;
         public Posicion posicion {get; set;}
-        public DetailsModel(IRepositorioPosicion repoPosicion)
+        public EditModel(IRepositorioPosicion repoPosicion)
         {
             _RepoPosicion = repoPosicion;
         }
@@ -23,10 +23,17 @@ namespace Torneo.App.Frontend.Pages.Posiciones
             if(posicion == null)
             {
                 return NotFound();
-            }else
+            }
+            else
             {
                 return Page();
+
             }
+        }
+        public IActionResult OnPost(Posicion posicion)
+        {
+            _RepoPosicion.UpdatePosicion(posicion);
+            return RedirectToPage("Index");
         }
     }
 }

@@ -7,32 +7,31 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Torneo.App.Persistencia;
 using Torneo.App.Dominio;
 
-namespace Torneo.App.Frontend.Pages.Posiciones
+namespace Torneo.App.Frontend.Pages.Jugadores
 {
     public class CreateModel : PageModel
     {
-        private readonly IRepositorioPosicion _RepoPosicion;
-        public Posicion posicion {get; set;}
-        public CreateModel(IRepositorioPosicion repoPosicion)
+        private readonly IRepositorioJugador _RepoJugador;
+        public Jugador jugador {get; set;}
+        public CreateModel(IRepositorioJugador repoJugador)
         {
-            _RepoPosicion = repoPosicion;
+            _RepoJugador = repoJugador;
         }
         public void OnGet()
         {
-            posicion = new Posicion();
-
+            jugador = new Jugador();
         }
-        public IActionResult OnPost(Posicion posicion)
+        public IActionResult OnPost(Jugador jugador)
         {
             if(ModelState.IsValid)
             {
-                _RepoPosicion.AddPosicion(posicion);
+                _RepoJugador.AddJugador(jugador);
                 return RedirectToPage("Index");
             }
             else
             {
                 return Page();
             }
-        }        
+        }         
     }
 }

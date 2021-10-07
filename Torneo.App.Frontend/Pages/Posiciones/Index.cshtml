@@ -3,6 +3,7 @@
 @{
 }
 <h1>Listado Posiciones</h1>
+<a class="btn btn-primary" style="background:blue" asp-page="./Create">Nueva Posicion</a>
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -17,10 +18,9 @@
             <td>@posicion.nombre</td>
             <td>
                 <a class="btn btn-primary" asp-page="./Details" asp-route-id="@posicion.id">Detalle</a>
+                <a class="btn btn-secondary" style="background:red" asp-page="./Edit" asp-route-id="@posicion.id">Editar</a>
+                
             </td>
-            <td>
-                <a class="btn btn-primary" asp-page="./Create" > Nueva posicion</a>
-            </td>            
         </tr>
       }
   </tbody>

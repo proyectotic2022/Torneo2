@@ -2,3 +2,11 @@
 @model Torneo.App.Frontend.Pages.Posiciones.DetailsModel
 @{
 }
+<h1>Detalle de Posiciones</h1>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.posicion.nombre</td>
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>
