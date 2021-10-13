@@ -1,0 +1,28 @@
+﻿@page
+@model Torneo.App.Frontend.Pages.Desempenos.DetailsModel
+@{
+}
+<h1>Detalle del Desempeno</h1>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">Id</th>
+        <td>@Model.desempeno.id</td>
+    </tr>
+    <tr>
+        <th scope="col">Partidos Ganados</th>
+        <td>@Model.desempeno.partidosG</td>
+    </tr>
+    <tr>
+        <th scope="col">Partidos Empatados</th>
+        <td>@Model.desempeno.partidosE</td>
+    </tr>
+    <tr>
+        <th scope="col">Partidos Perdidos</th>
+        <td>@Model.desempeno.partidosP</td>
+    </tr>
+    <tr>
+        <th scope="col">Partidos Jugados</th>
+        <td>@Model.desempeno.partidosJ</td>
+    </tr>
+</table>      
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

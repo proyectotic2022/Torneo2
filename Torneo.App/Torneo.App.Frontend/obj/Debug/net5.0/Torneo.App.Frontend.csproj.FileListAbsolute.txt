@@ -73,3 +73,17 @@ C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.Ap
 C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\bin\Debug\net5.0\Torneo.App.Dominio.pdb
 C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Details.cshtml.g.cs
 C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\DirectoresTecnicos\Index.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Create.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Edit.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Index.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Details.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Create.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Edit.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\DirectoresTecnicos\Details.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\DirectoresTecnicos\Create.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\DirectoresTecnicos\Edit.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\AddDirectorTecnico.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\AddMunicipio.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Desempenos\Index.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\AddDesempeno.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Desempenos\Details.cshtml.g.cs

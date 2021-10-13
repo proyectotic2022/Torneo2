@@ -34,22 +34,18 @@ namespace Torneo.App.Persistencia
         }
 
         //Mostrar un equipo
-        public Equipo GetEquipo(int id)
+        Equipo IRepositorioEquipo.GetEquipo(int id)
         {
             var equipo = _appContext.Equipos
-            .Where(e => e.id == id)
-            .Include(e => e.directorTecnico)
-            .FirstOrDefault();
-
-            equipo = _appContext.Equipos
-            .Where(e => e.id == id)
-            .Include(e => e.municipio)
-            .FirstOrDefault();
-            return _appContext.Equipos.Find(id);
+                .Where(e => e.id == id)
+                .Include(e => e.directorTecnico)
+                .Include(e => e.municipio)
+                .FirstOrDefault();
+            return equipo;
         }
 
         //Actualizar equipo
-        public Equipo UpdateEquipo(Equipo equipo)
+        Equipo IRepositorioEquipo.UpdateEquipo(Equipo equipo)
         {
             var equipoEncontrado = _appContext.Equipos.Find(equipo.id);            
             if (equipoEncontrado != null)
@@ -61,7 +57,7 @@ namespace Torneo.App.Persistencia
         }
 
         //Asignar DT a equipo
-        public DirectorTecnico AsignarDirectorTecnico(int idEquipo, int idDirectorTecnico)
+        DirectorTecnico IRepositorioEquipo.AsignarEquipo_DirectorTecnico(int idEquipo, int idDirectorTecnico)
         {
             var e_encontrado = _appContext.Equipos.FirstOrDefault(e=>e.id==idEquipo);
             if(e_encontrado!=null)
@@ -78,7 +74,7 @@ namespace Torneo.App.Persistencia
         }
 
         //Asignar Municipio a equipo
-        public Municipio AsignarMunicipio(int idEquipo, int idMunicipio)
+        public Municipio AsignarEquipo_Municipio(int idEquipo, int idMunicipio)
         {
             var e_encontrado = _appContext.Equipos.FirstOrDefault(e=>e.id==idEquipo);
             if(e_encontrado!=null)
@@ -95,7 +91,7 @@ namespace Torneo.App.Persistencia
         }
 
         //Asignar Desempeno a equipo
-        public Desempeno AsignarDesempeno(int idEquipo, int idDesempeno)
+        public Desempeno AsignarEquipo_Desempeno(int idEquipo, int idDesempeno)
         {
             var e_encontrado = _appContext.Equipos.FirstOrDefault(e=>e.id==idEquipo);
             if(e_encontrado!=null)

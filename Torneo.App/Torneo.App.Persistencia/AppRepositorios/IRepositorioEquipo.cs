@@ -11,8 +11,8 @@ namespace Torneo.App.Persistencia
         Equipo UpdateEquipo(Equipo equipo);
         void DeleteEquipo(int id);    
         Equipo GetEquipo(int id);
-        DirectorTecnico AsignarDirectorTecnico(int id_Equipo, int id_DirectorTecnico);
-        Municipio AsignarMunicipio(int id_Equipo, int id_Municipio);
-        Desempeno AsignarDesempeno(int id_Equipo, int id_Desempeno);
+        DirectorTecnico AsignarEquipo_DirectorTecnico(int idEquipo, int idDirectorTecnico);
+        Municipio AsignarEquipo_Municipio(int idEquipo, int idMunicipio);
+        Desempeno AsignarEquipo_Desempeno(int idEquipo, int idDesempeno);
     }
 }

@@ -12,7 +12,7 @@
         <th scope="col">Director Tecnico</th>
         @if (Model.equipo.directorTecnico == null)
         {
-            <td><a class="btn btn-primary" asp-page="./AddDT" asp-route-id="@Model.equipo.id">Asignar Director Tecnico</a></td>
+            <td><a class="btn btn-primary" asp-page="./AddDirectorTecnico" asp-route-id="@Model.equipo.id">Asignar Director Tecnico</a></td>
         }
          else
         {
@@ -23,11 +23,55 @@
         <th scope="col">Municipio</th>
         @if (Model.equipo.municipio == null)
         {
-            <td><a class="btn btn-primary" asp-page="./AddMunicipio" asp-route-id="@Model.equipo.id">Asignar Equipo</a></td>
+            <td><a class="btn btn-primary" asp-page="./AddMunicipio" asp-route-id="@Model.equipo.id">Asignar Municipio</a></td>
         }
          else
         {
             <td>@Model.equipo.municipio.nombre</td>
+        }        
+    </tr>
+    <tr>
+        <th scope="col">Partidos Ganados</th>
+        @if (Model.equipo.desempeno == null)
+        {
+            <td><a class="btn btn-primary" asp-page="./AddDesempeno" asp-route-id="@Model.equipo.id">Asignar Desemeño</a></td>
+        }
+         else
+        {
+            <td>@Model.equipo.desempeno.partidosG</td>
+        }        
+    </tr>
+    <tr>
+        <th scope="col">Partidos Empatados</th>
+        @if (Model.equipo.desempeno == null)
+        {
+            <td><a class="btn btn-primary" asp-page="./AddDesempeno" asp-route-id="@Model.equipo.id">Asignar Desemeño</a></td>
+        }
+         else
+        {
+            <td>@Model.equipo.desempeno.partidosE</td>
+        }        
+    </tr>
+    <tr>
+        <th scope="col">Partidos Perdidos</th>
+        @if (Model.equipo.desempeno == null)
+        {
+            <td><a class="btn btn-primary" asp-page="./AddDesempeno" asp-route-id="@Model.equipo.id">Asignar Desemeño</a></td>
+        }
+         else
+        {
+            <td>@Model.equipo.desempeno.partidosE</td>
+        }        
+    </tr>
+    <tr>
+        <th scope="col">Partidos Jugados</th>
+        @if (Model.equipo.desempeno == null)
+        {
+            <td><a class="btn btn-primary" asp-page="./AddDesempeno" asp-route-id="@Model.equipo.id">Asignar Desemeño</a></td>
+        }
+         else
+        {
+            <td>@Model.equipo.desempeno.partidosJ</td>
         }        
     </tr>
 </table>

@@ -3,6 +3,7 @@
 @{
 }
 <h1>Listado Equipos</h1>
+<a class="btn btn-primary" asp-page="./Create">Nuevo equipo</a>
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -17,6 +18,7 @@
             <th>@equipo.nombre</th>
             <td>
                 <a class="btn btn-primary" asp-page="./Details" asp-route-id="@equipo.id">Detalle</a>
+                <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@equipo.id">Editar</a>
             </td>
         </tr>
       }
