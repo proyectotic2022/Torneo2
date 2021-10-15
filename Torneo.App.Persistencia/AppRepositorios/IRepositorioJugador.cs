@@ -6,6 +6,7 @@ namespace Torneo.App.Persistencia
     public interface IRepositorioJugador
     {
         IEnumerable<Jugador> GetAllJugadores();
+        IEnumerable<Jugador> SearchJugador(string nombre);
         Jugador AddJugador(Jugador jugador);
         Jugador UpdateJugador(Jugador jugador);
         void DeleteJugador(int id);    

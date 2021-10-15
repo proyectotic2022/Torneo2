@@ -7,6 +7,7 @@ namespace Torneo.App.Persistencia
     public interface IRepositorioEquipo
     {
         IEnumerable<Equipo> GetAllEquipos();
+        IEnumerable<Equipo> SearchEquipo(string nombre);
         Equipo AddEquipo(Equipo equipo);
         Equipo UpdateEquipo(Equipo equipo);
         void DeleteEquipo(int id);    

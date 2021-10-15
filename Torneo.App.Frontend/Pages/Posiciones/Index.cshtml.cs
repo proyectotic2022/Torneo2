@@ -12,14 +12,24 @@ namespace Torneo.App.Frontend.Pages.Posiciones
     public class IndexModel : PageModel
     {
         private readonly IRepositorioPosicion _RepoPosicion;
-        public IEnumerable<Posicion> posiciones {get; set;}
+        public IEnumerable<Posicion> posiciones { get; set; }
+        public string bActual { get; set; }
         public IndexModel(IRepositorioPosicion repoPosicion)
         {
             _RepoPosicion = repoPosicion;
         }
-        public void OnGet()
+        public void OnGet(string b)
         {
-            posiciones = _RepoPosicion.GetAllPosiciones();
+            if (String.IsNullOrEmpty(b))
+            {
+                bActual = "";
+                posiciones = _RepoPosicion.GetAllPosiciones();
+            }
+            else
+            {
+                bActual = b;
+                posiciones = _RepoPosicion.SearchPosicion(b);
+            }
         }
     }
 }

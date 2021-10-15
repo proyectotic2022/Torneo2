@@ -13,6 +13,7 @@ namespace Torneo.App.Frontend.Pages.Posiciones
     {
         private readonly IRepositorioPosicion _RepoPosicion;
         public Posicion posicion {get; set;}
+        public IEnumerable<Posicion> posiciones {get; set;}
         public EditModel(IRepositorioPosicion repoPosicion)
         {
             _RepoPosicion = repoPosicion;
@@ -20,6 +21,7 @@ namespace Torneo.App.Frontend.Pages.Posiciones
         public IActionResult OnGet(int id)
         {
             posicion = _RepoPosicion.GetPosicion(id);
+            posiciones = _RepoPosicion.GetAllPosiciones();
             if(posicion == null)
             {
                 return NotFound();
@@ -27,13 +29,12 @@ namespace Torneo.App.Frontend.Pages.Posiciones
             else
             {
                 return Page();
-
             }
         }
         public IActionResult OnPost(Posicion posicion)
         {
             _RepoPosicion.UpdatePosicion(posicion);
-            return RedirectToPage("Index");
+            return RedirectToPage("Details", new{id = posicion.id});
         }
     }
 }

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System;
 using System.ComponentModel.DataAnnotations;
 namespace Torneo.App.Dominio
 {
@@ -9,10 +9,9 @@ namespace Torneo.App.Dominio
         [StringLength(50, ErrorMessage = "Maximo 50 caracteres")]
         public string nombre {get;set;}
         [Display(Name ="Número")]
+        [Required(ErrorMessage = "El numero es obligatorio")]
         public int numero{get;set;}
-        [Display(Name ="Equipo")]
         public Equipo equipo {get; set;}
-        [Display(Name ="Posicion")]
         public Posicion posicion {get; set;}
         
     }

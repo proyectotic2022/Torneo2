@@ -1,0 +1,27 @@
+﻿@page
+@model Torneo.App.Frontend.Pages.Novedades.DetailsModel
+@{
+}
+<h1>Detalle de la novedad</h1>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.novedad.nombre</td>
+    </tr>
+    <tr>
+        <th scope="col">Minuto</th>
+        <td>@Model.novedad.minuto</td>
+    </tr>    
+    <tr>
+        <th scope="col">Jugador</th>
+        @if (Model.novedad.jugador == null)
+        {
+            <td><a class="btn btn-primary" asp-page="./AddJugador" asp-route-id="@Model.novedad.id">Asignar Jugador</a></td>
+        }
+         else
+        {
+            <td>@Model.novedad.jugador.nombre</td>
+        }        
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using Torneo.App.Dominio;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Torneo.App.Persistencia
 {
@@ -30,26 +32,50 @@ namespace Torneo.App.Persistencia
         {
             return _appContext.Novedades;
         }
+        // Se define el metodo buscar Novedad
+        IEnumerable<Novedad> IRepositorioNovedad.SearchNovedad(string nombre)
+        {
+            return _appContext.Novedades
+                .Where(n => n.nombre.Contains(nombre));
+        }        
 
         //Mostrar una novedad
-        public Novedad GetNovedad(int id)
+        Novedad IRepositorioNovedad.GetNovedad(int id)
         {
-            return _appContext.Novedades.Find(id);
+            var novedad = _appContext.Novedades
+                .Where(n => n.id == id)
+                .Include(n => n.jugador)
+                .FirstOrDefault();
+            return novedad;
         }
 
         //Actualizar novedad
-        public Novedad UpdateNovedad(Novedad novedad, Jugador jugador)
+        Novedad IRepositorioNovedad.UpdateNovedad(Novedad novedad)
         {
             var novedadEncontrada = _appContext.Novedades.Find(novedad.id);
-            var idJugador = _appContext.Jugadores.Find(jugador.id);
             if (novedadEncontrada != null)
             {
                 novedadEncontrada.nombre = novedad.nombre;
                 novedadEncontrada.minuto = novedad.minuto;
-                idJugador.id = jugador.id;
                 _appContext.SaveChanges();
             }
             return novedadEncontrada;
         }
+        // Asignar Jugador a Novedad
+        Jugador IRepositorioNovedad.AsignarNovedad_Jugador(int id_novedad, int id_jugador)
+        {
+            var n_encontrado=_appContext.Novedades.FirstOrDefault(n=>n.id==id_novedad);
+            if(n_encontrado!= null)
+            {
+             var j_encontrado=_appContext.Jugadores.FirstOrDefault(j=>j.id==id_jugador);
+             if(j_encontrado!=null)
+             {
+               n_encontrado.jugador=j_encontrado;
+               _appContext.SaveChanges();
+             }
+             return j_encontrado;
+            }
+            return null;
+        }        
     }
 }

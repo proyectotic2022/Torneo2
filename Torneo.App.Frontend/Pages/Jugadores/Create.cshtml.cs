@@ -32,6 +32,6 @@ namespace Torneo.App.Frontend.Pages.Jugadores
             {
                 return Page();
             }
-        }         
+        }
     }
 }

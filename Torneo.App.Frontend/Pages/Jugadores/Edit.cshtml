@@ -7,8 +7,11 @@
 <form method="post">
     <div class="form-group">
         <label for="id_jugador">Jugador</label>
-        <input id="id_jugador" type="text" name="id_jugador" value="@Model.jugador.id" class="form-control" readonly>
+        <input id="id_jugador" type="text" name="id_jugador" value="@Model.jugador.id"  class="form-control" readonly>
     </div>
+    <div class="form-group">
+        <input type ="hidden" asp-for="jugador.id" class="form-control" readonly>
+    </div>    
     <div class="form-group">
         <label asp-for="jugador.nombre"></label>
         <input asp-for="jugador.nombre" class="form-control">
@@ -17,6 +20,8 @@
     <div class="form-group">
         <label asp-for="jugador.numero"></label>
         <input asp-for="jugador.numero" class="form-control">
+        <span asp-validation-for="jugador.nombre" class="text-danger"></span>
+    </div>
     <div class="form-group">
         <label for="id_equipo">Equipo</label>
         <select name="id_equipo" id="id_equipo" class="form-control">

@@ -13,6 +13,7 @@ namespace Torneo.App.Consola
         private static IRepositorioEquipo _RepositorioEquipo = new RepositorioEquipo();
         private static IRepositorioPartido _RepositorioPartido = new RepositorioPartido();
         private static IRepositorioDirectorTecnico _RepositorioDirectorTecnico = new RepositorioDirectorTecnico();
+        private static IRepositorioNovedad _RepositorioNovedad = new RepositorioNovedad();
         static void Main(string[] args)
         {
             
@@ -355,7 +356,7 @@ namespace Torneo.App.Consola
                                 break;
 
                                 case 4:
-                                    mostrarEquipos();
+                                    mostrarEquipo();
                                 break;
 
                                 case 5:
@@ -455,7 +456,77 @@ namespace Torneo.App.Consola
                                 break;
                             }//cierre switch DirectorTecnico                                
                         } while (operacion8 != 0);
-                        break;                        
+                        break;
+                    case 9:
+                        int operacion9;
+                        do
+                        {
+                            Console.WriteLine("Seleccione la opcion que desea de Novedad");
+                            Console.WriteLine("1.  Insertar Novedad");
+                            Console.WriteLine("2.  Asignar jugador");
+                            Console.WriteLine("3.  Buscar Novedad");
+                            Console.WriteLine("4.  Mostrar Novedades");
+                            Console.WriteLine("5.  Actualizar Novedad");
+                            Console.WriteLine("6.  Eliminar Novedad");
+                            Console.WriteLine("0.  Salir opción Novedad");
+                            Console.WriteLine("Ingrese la operación que desea ejecutar");
+                            operacion9 = int.Parse(Console.ReadLine());
+
+                            switch (operacion9)
+                            {
+                                case 1:
+                                    String nombreNov;
+                                    int minuto;
+                                    Console.WriteLine("Digite Novedad (Tarjeta Amarilla, Roja o Gol)");
+                                    nombreNov = (Console.ReadLine());
+                                    Console.WriteLine("Digite minuto de Novedad");
+                                    minuto = int.Parse(Console.ReadLine());
+                                    AdicionarNovedad(nombreNov, minuto);
+                                break;
+
+                                case 2:
+                                    int id_novedad, id_jugador;
+                                    Console.WriteLine("Digite id novedad");
+                                    id_novedad = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Digite id jugador");
+                                    id_jugador = int.Parse(Console.ReadLine());
+                                    Asignar_Novedad_Jugador(id_novedad, id_jugador);
+                                break;
+
+                                case 3:
+                                    int codigoNov;
+                                    Console.WriteLine("Digite codigo de Novedad");
+                                    codigoNov = int.Parse(Console.ReadLine());
+                                    BuscarNovedad(codigoNov);
+                                break;
+
+                                case 4:
+                                    mostrarNovedad();
+                                break;
+
+                                case 5:
+                                    Novedad novedad = new Novedad();
+                                    Console.WriteLine("Digite ID novedad a editar");
+                                    id_novedad = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("ingrese la nueva novedad");
+                                    nombreNov = (Console.ReadLine());
+                                    novedad.id = id_novedad;
+                                    novedad.nombre = nombreNov;
+                                    ModificarNovedad(novedad);
+                                    Console.WriteLine("Digite ID del nuevo jugador a actualizar");
+                                    id_jugador = int.Parse(Console.ReadLine());
+                                    Asignar_Novedad_Jugador(id_novedad, id_jugador);
+                                break;
+
+                                case 6:
+                                    int idnovedad;
+                                    Console.WriteLine("Digite ID a eliminar");
+                                    idnovedad = int.Parse(Console.ReadLine());
+                                    EliminarNovedad(idnovedad);
+                                break;
+                            }//cierre switch novedad
+                        } while (operacion9 != 0);
+                        break;                                                
                 }//cierre switch principal 
             } while (opcion != 0);
 
@@ -494,7 +565,7 @@ namespace Torneo.App.Consola
                 Console.WriteLine(jugador.nombre + " " + jugador.numero + " ");
             }
         }
-        private static void mostrarEquipos()
+        private static void mostrarEquipo()
         {
             var equipos = _RepositorioEquipo.GetAllEquipos();
             foreach (var equipo in equipos)
@@ -509,7 +580,15 @@ namespace Torneo.App.Consola
             {
                 Console.WriteLine(dTecnico.nombre + " " + dTecnico.documento + " " + dTecnico.telefono);
             }
-        }        
+        }
+        private static void mostrarNovedad()
+        {
+            var novedades = _RepositorioNovedad.GetAllNovedades();
+            foreach (var novedad in novedades)
+            {
+                Console.WriteLine(novedad.nombre + " " + novedad.minuto + " ");
+            }
+        }                   
         //////////// BUSCAR ///////////////////////
         private static void BuscarArbitro(int id)
         {
@@ -541,6 +620,12 @@ namespace Torneo.App.Consola
             var directorTecnico = _RepositorioDirectorTecnico.GetDT(id);
             Console.WriteLine(directorTecnico.nombre + " " + directorTecnico.documento + " " + directorTecnico.telefono);
         }
+        private static void BuscarNovedad(int id)
+        {
+            var novedades = _RepositorioNovedad.GetNovedad(id);
+            Console.WriteLine(novedades.nombre + " " + novedades.minuto + " ");
+        }        
+
         //////////// INSERTAR - ADICIONAR ///////////////////////        
         private static void AdicionarArbitro(String nombre, int documento, int telefono, String colegio)
         {
@@ -608,7 +693,17 @@ namespace Torneo.App.Consola
                 
             };
             _RepositorioDirectorTecnico.AddDT(dTecnico);
-        }        
+        }
+
+        private static void AdicionarNovedad(String nombre, int minuto)
+        {
+            var novedad = new Novedad
+            {
+                nombre = nombre,
+                minuto = minuto,
+            };
+            _RepositorioNovedad.AddNovedad(novedad);
+        }                
         /////////////// ASIGNAR /////////////////////// 
         private static void AsignarArbitro_Partido(int id_partido, int id_arbitro)
         {
@@ -631,22 +726,30 @@ namespace Torneo.App.Consola
             var municipio = _RepositorioEquipo.AsignarMunicipio(id_Equipo, id_Municipio);
             Console.WriteLine(municipio.nombre);
         }
-
+        // Asignar Equipo a Jugador       
         private static void Asignar_Jugador_Equipo(int id_jugador, int id_equipo)
         {
             var equipo = _RepositorioJugador.AsignarJugador_Equipo(id_jugador, id_equipo);
             Console.WriteLine(equipo.nombre);
         }
+
+        // Asignar Posicion a Jugador ----- Se edita
         private static void Asignar_Posicion_Jugador(int id_jugador, int id_posicion)
         {
-            var jugador = _RepositorioJugador.AsignarPosicion_Jugador(id_jugador, id_posicion);
-            Console.WriteLine(jugador.nombre);
+            var posicion = _RepositorioJugador.AsignarPosicion_Jugador(id_jugador, id_posicion);
+            Console.WriteLine(posicion.nombre);
         }
         private static void AsignarDesempeno_Equipo(int id_Equipo, int id_Desempeno)
         {
             var desempeno = _RepositorioEquipo.AsignarDesempeno(id_Equipo, id_Desempeno);
             Console.WriteLine(desempeno.id);
         }
+        // Asignar Jugador a Novedad
+        private static void Asignar_Novedad_Jugador(int id_novedad, int id_jugador)
+        {
+            var jugador = _RepositorioNovedad.AsignarNovedad_Jugador(id_novedad, id_jugador);
+            Console.WriteLine(jugador.nombre);
+        }        
 
         /////////////// ELIMINAR /////////////////////// 
         private static void EliminarArbitro(int id)
@@ -673,6 +776,10 @@ namespace Torneo.App.Consola
         {
             _RepositorioDirectorTecnico.DeleteDT(id);
         }
+        private static void EliminarNovedad(int id)
+        {
+            _RepositorioNovedad.DeleteNovedad(id);
+        }        
         //////////// MODIFICAR ///////////////////////  
         private static void ModificarArbitro(Arbitro arbitro)
         {
@@ -709,6 +816,12 @@ namespace Torneo.App.Consola
             Console.WriteLine(dTecnico.nombre);
             Console.WriteLine(dTecnico.documento);
             Console.WriteLine(dTecnico.telefono);            
-        }        
+        }
+        private static void ModificarNovedad(Novedad novedad)
+        {
+            _RepositorioNovedad.UpdateNovedad(novedad);
+            Console.WriteLine(novedad.nombre);
+            Console.WriteLine(novedad.minuto);
+        }                
     }
 }

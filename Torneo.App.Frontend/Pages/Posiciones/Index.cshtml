@@ -4,6 +4,13 @@
 }
 <h1>Listado Posiciones</h1>
 <a class="btn btn-primary" style="background:blue" asp-page="./Create">Nueva Posicion</a>
+<form method="get">
+  <div class="form-group">
+    <label for="b">Buscar</label>
+    <input name="b" id="b" class="form-control" asp-for="@Model.bActual">
+  </div>
+  <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -18,8 +25,8 @@
             <td>@posicion.nombre</td>
             <td>
                 <a class="btn btn-primary" asp-page="./Details" asp-route-id="@posicion.id">Detalle</a>
-                <a class="btn btn-secondary" style="background:red" asp-page="./Edit" asp-route-id="@posicion.id">Editar</a>
-                
+                <a class="btn btn-secondary" style="background:green" asp-page="./Edit" asp-route-id="@posicion.id">Editar</a>
+                <a class="btn btn-secondary" style="background:red" asp-page="./Delete" asp-route-id="@posicion.id">Eliminar</a>
             </td>
         </tr>
       }

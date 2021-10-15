@@ -7,6 +7,7 @@ namespace Torneo.App.Persistencia
     public interface IRepositorioDirectorTecnico
     {
         IEnumerable<DirectorTecnico> GetAllDT();
+        IEnumerable<DirectorTecnico> SearchDirectorTecnico(string nombre);
         DirectorTecnico AddDT(DirectorTecnico directortecnico);
         DirectorTecnico UpdateDT(DirectorTecnico directortecnico);
         void DeleteDT(int id);    

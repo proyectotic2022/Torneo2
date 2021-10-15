@@ -13,14 +13,23 @@ namespace Torneo.App.Frontend.Pages.Equipos
     {
         private readonly IRepositorioEquipo _RepoEquipo;
         public IEnumerable<Equipo> equipos {get; set;}
+        public string bActual { get; set; }
         public IndexModel(IRepositorioEquipo repoEquipo)
         {
             _RepoEquipo = repoEquipo;
         }
-
-        public void OnGet()
+        public void OnGet(string b)
         {
-            equipos = _RepoEquipo.GetAllEquipos();
+            if (String.IsNullOrEmpty(b))
+            {
+                bActual = "";
+                equipos = _RepoEquipo.GetAllEquipos();
+            }
+            else
+            {
+                bActual = b;
+                equipos = _RepoEquipo.SearchEquipo(b);
+            }
         }
     }
 }

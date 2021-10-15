@@ -31,6 +31,12 @@ namespace Torneo.App.Persistencia
         {
             return _appContext.DirectoresTecnicos;
         }
+        // Se define el metodo buscar DirectorT
+        IEnumerable<DirectorTecnico> IRepositorioDirectorTecnico.SearchDirectorTecnico(string nombre)
+        {
+            return _appContext.DirectoresTecnicos
+                .Where(dt => dt.nombre.Contains(nombre));
+        }        
 
         //Mostrar un DT
         public DirectorTecnico GetDT(int id)

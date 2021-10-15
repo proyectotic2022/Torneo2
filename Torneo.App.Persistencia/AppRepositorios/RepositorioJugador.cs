@@ -7,7 +7,6 @@ namespace Torneo.App.Persistencia
 {
     public class RepositorioJugador : IRepositorioJugador
     {
-
         private readonly AppContext _appContext = new AppContext();
 
         //Agregar jugador
@@ -33,6 +32,13 @@ namespace Torneo.App.Persistencia
         {
             return _appContext.Jugadores;
         }
+        // Se define el metodo buscar Jugador
+
+        IEnumerable<Jugador> IRepositorioJugador.SearchJugador(string nombre)
+        {
+            return _appContext.Jugadores
+                .Where(j => j.nombre.Contains(nombre));
+        }        
 
         //Mostrar un jugador
         Jugador IRepositorioJugador.GetJugador(int id)
@@ -46,7 +52,7 @@ namespace Torneo.App.Persistencia
         }
 
         //Actualizar jugadores
-        public Jugador UpdateJugador(Jugador jugador)
+        Jugador IRepositorioJugador.UpdateJugador(Jugador jugador)
         {
             var jugadorEncontrado = _appContext.Jugadores.Find(jugador.id);
             if (jugadorEncontrado != null)
@@ -73,14 +79,14 @@ namespace Torneo.App.Persistencia
             }
             return null;
         }
-        // Asignar Posicion a Jugador
+        // Asignar Posicion a Jugador ------ Se edita
         Posicion IRepositorioJugador.AsignarPosicion_Jugador(int id_jugador, int id_posicion)
         {
-            var j_encontrado=_appContext.Jugadores.FirstOrDefault(p=>p.id==id_jugador);
+            var j_encontrado=_appContext.Jugadores.FirstOrDefault(j=>j.id==id_jugador);
             if(j_encontrado!= null)
             {
-             var p_encontrado=_appContext.Posiciones.FirstOrDefault(j=>j.id==id_posicion);
-             if(j_encontrado!=null)
+             var p_encontrado=_appContext.Posiciones.FirstOrDefault(p=>p.id==id_posicion);
+             if(p_encontrado!=null)
              {
                j_encontrado.posicion=p_encontrado;
                _appContext.SaveChanges();

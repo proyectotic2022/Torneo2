@@ -28,6 +28,12 @@ namespace Torneo.App.Persistencia
         {
             return _appContext.Equipos;
         }
+        // Se define el metodo buscar Equipo
+        IEnumerable<Equipo> IRepositorioEquipo.SearchEquipo(string nombre)
+        {
+            return _appContext.Equipos
+                .Where(e => e.nombre.Contains(nombre));
+        }        
         //Mostrar un equipo
         public Equipo GetEquipo(int id)
         {

@@ -23,16 +23,26 @@ namespace Torneo.App.Frontend.Pages.Jugadores
             _RepoEquipo = repoEquipo;
             _RepoPosicion = repoPosicion;
         }
-        public void OnGet(int id)
+        public IActionResult OnGet(int id)
         {
             jugador = _RepoJugador.GetJugador(id);
             equipos = _RepoEquipo.GetAllEquipos();
             posiciones = _RepoPosicion.GetAllPosiciones();
+            if (jugador == null)
+            {
+                return NotFound();
+            }
+            else 
+            {
+                return Page();
+            }
         }
-        public IActionResult OnPost(int id_jugador, int id_equipo, int id_posicion)
+        public IActionResult OnPost(Jugador jugador, int id_jugador, int id_equipo, int id_posicion)
         {
+            _RepoJugador.UpdateJugador(jugador);
             _RepoJugador.AsignarJugador_Equipo(id_jugador, id_equipo);
             _RepoJugador.AsignarPosicion_Jugador(id_jugador, id_posicion);
+            //return RedirectToPage("Index");
             return RedirectToPage("Details", new{id = id_jugador});
         }
     }

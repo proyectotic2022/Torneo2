@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Torneo.App.Dominio;
 
 namespace Torneo.App.Persistencia
@@ -29,6 +30,12 @@ namespace Torneo.App.Persistencia
         public IEnumerable<Posicion> GetAllPosiciones()
         {
             return _appContext.Posiciones;
+        }
+        // Se define el metodo buscar Posicion
+        IEnumerable<Posicion> IRepositorioPosicion.SearchPosicion(string nombre)
+        {
+            return _appContext.Posiciones
+                .Where(p => p.nombre.Contains(nombre));
         }
 
         //Mostrar una posicion

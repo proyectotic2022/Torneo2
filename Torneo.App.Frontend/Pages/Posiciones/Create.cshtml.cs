@@ -13,6 +13,7 @@ namespace Torneo.App.Frontend.Pages.Posiciones
     {
         private readonly IRepositorioPosicion _RepoPosicion;
         public Posicion posicion {get; set;}
+        
         public CreateModel(IRepositorioPosicion repoPosicion)
         {
             _RepoPosicion = repoPosicion;
@@ -20,7 +21,6 @@ namespace Torneo.App.Frontend.Pages.Posiciones
         public void OnGet()
         {
             posicion = new Posicion();
-
         }
         public IActionResult OnPost(Posicion posicion)
         {

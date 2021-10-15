@@ -13,14 +13,24 @@ namespace Torneo.App.Frontend.Pages.DirectoresTecnicos
     {
         private readonly IRepositorioDirectorTecnico _RepoDT;
         public IEnumerable<DirectorTecnico> directoresTecnicos {get; set;}
+        public string bActual { get; set; }
         public IndexModel(IRepositorioDirectorTecnico repoDT)
         {
             _RepoDT = repoDT;
         }
 
-        public void OnGet()
+        public void OnGet(string b)
         {
-            directoresTecnicos = _RepoDT.GetAllDT();
+            if (String.IsNullOrEmpty(b))
+            {
+                bActual = "";
+                directoresTecnicos = _RepoDT.GetAllDT();
+            }
+            else
+            {
+                bActual = b;
+                directoresTecnicos = _RepoDT.SearchDirectorTecnico(b);
+            }
         }
     }
 }

@@ -6,7 +6,8 @@ namespace Torneo.App.Dominio
     {
         public int id{get;set;}
         [Required(ErrorMessage = "El nombre es obligatorio")]
-        [StringLength(10, ErrorMessage = "Maximo 10 caracteres")]
+        [StringLength(20, ErrorMessage = "Maximo 10 caracteres")]
+        [Display(Name ="Posicion")]
         public string nombre {get;set;}
         
     }    

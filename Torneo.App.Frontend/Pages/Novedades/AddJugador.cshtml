@@ -1,0 +1,23 @@
+﻿@page
+@using Torneo.App.Dominio
+@model Torneo.App.Frontend.Pages.Novedades.AddJugadorModel
+@{
+}
+<h1>Asignar jugador</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="id_novedad">Novedad</label>
+        <input id="id_novedad" type="text" name="id_novedad" value="@Model.novedad.id" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+        <label for="id_jugador">Jugador</label>
+        <select name="id_jugador" id="id_jugador" class="form-control">
+            @foreach (var jugador in Model.jugadores)
+            {
+                <option value="@jugador.id">@jugador.nombre</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Asignar jugador</button>
+</form>
+<a asp-page="./Index" class="btn btn-secondary">Volver</a>
