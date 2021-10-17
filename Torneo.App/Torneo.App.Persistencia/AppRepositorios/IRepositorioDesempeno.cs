@@ -8,7 +8,7 @@ namespace Torneo.App.Persistencia
     {
         IEnumerable<Desempeno> GetAllDesempenos();
         Desempeno AddDesempeno(Desempeno desempeno);
-        Desempeno UpdateDesempeno(Desempeno desempeno, Partido partido);
+        Desempeno UpdateDesempeno(Desempeno desempeno);
         void DeleteDesempeno(int id);    
         Desempeno GetDesempeno(int id);
     }

@@ -87,3 +87,5 @@ C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.Ap
 C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Desempenos\Index.cshtml.g.cs
 C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\AddDesempeno.cshtml.g.cs
 C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Desempenos\Details.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Desempenos\Create.cshtml.g.cs
+C:\Users\yudyc\Documents\MINTIC\Ciclo 3\Desarrollo de software\Torneo2\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Desempenos\Edit.cshtml.g.cs

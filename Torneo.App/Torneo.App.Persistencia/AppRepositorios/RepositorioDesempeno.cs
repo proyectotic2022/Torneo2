@@ -38,14 +38,14 @@ namespace Torneo.App.Persistencia
         }
 
         //Actualizar desempeno
-        public Desempeno UpdateDesempeno(Desempeno desempeno, Partido partido)
+        public Desempeno UpdateDesempeno(Desempeno desempeno)
         {
             var desempenoEncontrado = _appContext.Desempenos.Find(desempeno.id);
-            var PartidosJ = _appContext.Partidos.Find(partido.id);
+            //var PartidosJ = _appContext.Partidos.Find(partido.id);
             if (desempenoEncontrado != null)
             {
-                PartidosJ.id = partido.id;
-                //desempenoEncontrado.partidosJ = desempeno.partidosJ;
+                //PartidosJ.id = partido.id;
+                desempenoEncontrado.partidosJ = desempeno.partidosJ;
                 desempenoEncontrado.partidosG = desempeno.partidosG;
                 desempenoEncontrado.partidosE = desempeno.partidosE;
                 desempenoEncontrado.partidosP = desempeno.partidosP;
