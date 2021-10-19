@@ -29,6 +29,8 @@
             <td>@directorTecnico.telefono</td>
             <td>
                 <a class="btn btn-primary" asp-page="./Details" asp-route-id="@directorTecnico.id">Detalle</a>
+                <a class="btn btn-secondary" style="background:green" asp-page="./Edit" asp-route-id="@directorTecnico.id">Editar</a>
+                <a class="btn btn-secondary" style="background:red" asp-page="./Delete" asp-route-id="@directorTecnico.id">Eliminar</a>                
             </td>
         </tr>
       }

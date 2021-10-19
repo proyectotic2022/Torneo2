@@ -168,3 +168,5 @@ D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\ob
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Create.cshtml.g.cs
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Edit.cshtml.g.cs
 D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\AddJugador.cshtml.g.cs
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Create.cshtml.g.cs
+D:\Alejo\Documentos\MinTic 2021\Ciclo 3\Torneo\Torneo.App\Torneo.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Delete.cshtml.g.cs

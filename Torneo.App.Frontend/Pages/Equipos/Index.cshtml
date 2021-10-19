@@ -3,6 +3,7 @@
 @{
 }
 <h1>Listado de Equipos</h1>
+<a class="btn btn-primary" style="background:blue" asp-page="./Create">Nuevo Equipo</a>
 <form method="get">
   <div class="form-group">
     <label for="b">Buscar</label>
@@ -24,6 +25,8 @@
             <td>@equipo.nombre</td>
             <td>
                 <a class="btn btn-primary" asp-page="./Details" asp-route-id="@equipo.id">Detalle</a>
+                <a class="btn btn-secondary" style="background:green" asp-page="./Edit" asp-route-id="@equipo.id">Editar</a>
+                <a class="btn btn-secondary" style="background:red" asp-page="./Delete" asp-route-id="@equipo.id">Eliminar</a>                
             </td>
         </tr>
       }
